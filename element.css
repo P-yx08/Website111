@@ -1,0 +1,47 @@
+
+:root {
+    --mm-sectionindexer-size: 20px;
+}
+
+:root {
+    --mm-iconpanel-size: 50px;
+}
+:root {
+    --mm-iconbar-size: 50px;
+}
+:root {
+    --mm-size: 80%;
+    --mm-min-size: 240px;
+    --mm-max-size: 440px;
+}
+:root {
+    --mm-toggle-size: 34px;
+}
+:root {
+    --mm-navbar-size: 50px;
+}
+:root {
+    --mm-listitem-size: 50px;
+}
+:root {
+    --mm-blocker-visibility-delay: .4s;
+    --mm-blocker-opacity-delay: 0s;
+}
+:root {
+    --mm-lineheight: 22px;
+}
+body, html {
+    font-family: ProximaNova-Regular, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.45em;
+    color: #282828;
+}
+
+user agent stylesheet
+:root {
+    view-transition-name: root;
+}
+user agent stylesheet
+html {
+    display: block;
+}
