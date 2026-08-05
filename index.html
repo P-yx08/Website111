@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Healthy Habits</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 
 <body>
@@ -15,9 +16,15 @@
       <h1>Healthy Habits</h1>
     </div>
     <nav class="links">
-      <a href="Home" class="nav-btn active">Home</a>
-      <a href="Guide" class="nav-btn">Guide</a>
-      <a href="Explore" class="nav-btn text-only">Explore</a>
+      <a href="#" class="nav-btn">
+        <i class="fa-solid fa-house"></i> Home
+      </a>
+      <a href="#info-section" class="nav-btn">
+        <i class="fa-solid fa-bell"></i> Guide
+      </a>
+      <a href="#habits-section" class="nav-btn">
+        <i class="fa-solid fa-lightbulb"></i> Explore
+      </a>
     </nav>
   </header>
      
@@ -25,73 +32,129 @@
     <div class="hero-card">
       <h1 class="hero-title">Changes happen here!</h1>
       <p class="hero-subtitle">Small steps make big differences</p>
-      
       <div class="button-container">
-        <a href="Start" class="btn-start">Start</a>
+        <a href="#info-section" class="btn-start">Start</a>
       </div>
+    </div>
+
+    <div class="bottom-credit">
+      <p>Image by <a href="https://pixabay.com" target="_blank">Couleur</a> from <a href="https://pixabay.com" target="_blank">Pixabay</a></p>
     </div>
   </main>
 
-  <div class="bottom-credit">
-    <p>Image by <a href="https://pixabay.com" target="_blank">Couleur</a> from <a href="https://pixabay.com" target="_blank">Pixabay</a></p>
-  </div>
+  <div class="info-page-wrapper" id="info-section">
+    <div class="info-content-box">
+      <div class="info-top-nav-bar">
+        <p class="info-title">Information</p>  
+        <div class="info-nav-links">
+          <a href="#" class="info-nav-btn">Home</a>
+          <a href="#info-section" class="info-nav-btn">Guide</a>
+          <a href="#habits-section" class="info-nav-btn">Explore</a>
+        </div>
+      </div>
 
-</body>
-</html>
+      <div class="info-hero-grid">
+        <div class="info-hero-card">
+          <h2 class="card-title">Why should we drink enough water?</h2> 
+          <p class="card-answer">A study of CDC shows, drinking enough water can prevent diseases, build up good moods, help reduce calorie intake.</p>
+        </div>
 
+        <div class="info-hero-card">
+          <h2 class="card-title">How much sleep do teenagers need?</h2> 
+          <p class="card-answer">According to a recommend of American Academy of Sleep medicine, teenagers should have about 8 to 10 hours of sleep each night.</p>
+        </div>
 
-  <div class="photos">
-    <div class="images1">
-      <img src="images/Sleep.jpg" alt="Sleep" style="width: 250px; height: 250px; object-fit: cover; border-radius: 8px;">
-      <p class="credit">
-        <a href="https://pixabay.com/illustrations/sleep-cartoon-night-bear-8379881/" target="_blank">Image credit: Pixabay</a>
-      </p>
-      <h2 class="card-title">Sleep</h2>
-    </div>
+        <div class="info-hero-card">
+          <h2 class="card-title">How to keep a balance diet?</h2> 
+          <p class="card-answer">An evidence from WHO shows the health benefits of a diet high in whole grains, vegetables, fruit, legumes and nuts, and low in salt, free sugars and fats, particularly saturated and trans fats.</p>
+        </div>
 
-    <div class="images1">
-      <img src="images/Exercise.jpg" alt="Exercise" style="width: 250px; height: 250px; object-fit: cover; border-radius: 8px;">
-      <p class="credit">
-        <a href="https://pixabay.com/illustrations/cat-rope-skipping-jumping-animal-5773481/" target="_blank">Image credit: Pixabay</a>
-      </p>
-      <h2 class="card-title">Exercise</h2>
-    </div>
-
-    <div class="images1">
-      <img src="images/Hydration1.jpg" alt="Hydration" style="width: 250px; height: 250px; object-fit: cover; border-radius: 8px;">
-      <p class="credit">
-        <a href="https://stockcake.com/i/dancing-water-royalty_2786415_1367519" target="_blank">Image credit: StockCake</a>
-      </p>
-      <h2 class="card-title">Hydration</h2>
-    </div>
-
-    <div class="images1">
-      <img src="images/Nutrition.jpg" alt="Nutrition" style="width: 250px; height: 250px; object-fit: cover; border-radius: 8px;">  
-      <p class="credit">
-        <a href="https://stockcake.com/i/nutrition-mandala-design_3338091_1702875" target="_blank">Image credit: StockCake</a>
-      </p>
-      <h2 class="card-title">Nutrition</h2>
-    </div>
-  </div> 
-
-  <div class="contact-section">
-    <h3>Contact us</h3>
-    <div class="bottom">
-      <div class="image-container">
-        <img src="images/Contact.jpg" alt="healthy habits illustration" width="200">
-        <p class="credit">
-          <a href="https://pixabay.com/illustrations/beach-sea-waves-water-ocean-4161593/" target="_blank">Image credit: Pixabay</a>
-        </p>
+        <div class="info-hero-card">
+          <h2 class="card-title">What are keys to keep exercise?</h2> 
+          <p class="card-answer">Based on Scripps article, If start exercise seems hard, just start from a small step.Pick exercises and activities you like. Try to make movement a normal part of your daily routine.</p>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="contact-info">
-      <h3>Email: healthyhabits@gmail.com</h3>
-      <h3>Phone number: 0800 656 7890</h3>
+  <div class="habits-page-wrapper" id="habits-section">
+    <div class="habits-content-box">
+      <h2 class="habits-section-title">7-day habits building</h2>
+
+      <div class="days-container">
+        <div class="day-box"></div>
+        <div class="day-box"></div>
+        <div class="day-box"></div>
+        <div class="day-box"></div>
+        <div class="day-box"></div>
+        <div class="day-box"></div>
+        <div class="day-box"></div>
+      </div>
+
+      <div class="photos">
+        <div class="images1">
+          <h3 class="habit-top-title">Hydrate</h3>
+          <img src="images/Hydration1.jpg" alt="Hydration">
+          <p class="credit">
+            <a href="https://stockcake.com" target="_blank">Image credit: StockCake</a>
+          </p>
+          <div class="pink-status-bar">Drink enough water</div>
+        </div>
+
+        <div class="images1">
+          <h3 class="habit-top-title">Sleep</h3>
+          <img src="images/Sleep.jpg" alt="Sleep">
+          <p class="credit">
+            <a href="https://pixabay.com" target="_blank">Image credit: Pixabay</a>
+          </p>
+          <div class="pink-status-bar">Sleep is essential</div>
+        </div>
+
+        <div class="images1">
+          <h3 class="habit-top-title">Exercise</h3>
+          <img src="images/Exercise.jpg" alt="Exercise">
+          <p class="credit">
+            <a href="https://pixabay.com" target="_blank">Image credit: Pixabay</a>
+          </p>
+          <div class="pink-status-bar">Let's do some exercise</div>
+        </div>
+
+        <div class="images1">
+          <h3 class="habit-top-title">Nutrition</h3>
+          <img src="images/Nutrition.jpg" alt="Nutrition">  
+          <p class="credit">
+            <a href="https://stockcake.com" target="_blank">Image credit: StockCake</a>
+          </p>
+          <div class="pink-status-bar">Eat well for mood</div>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <div class="footer-columns-container">
+      
+      <div class="footer-column align-left">
+        <h2>About Us</h2>
+        <a href="#" class="footer-link">Discover</a>
+        <a href="#" class="footer-link">Latest news</a>
+      </div>
+
+      <div class="footer-column align-center">
+        <div class="contact-image-box">
+          <img src="images/Contact.jpg" alt="healthy habits illustration">
+          <span class="contact-img-credit">Image from Pixabay</span>
+        </div>
+      </div>
+
+      <div class="footer-column align-right">
+        <h2>Contact Us</h2>
+        <p class="footer-text">Email: healthyhabits@gmail.com</p>
+        <p class="footer-text">Phone number: 0800 656 7890</p>
+      </div>
+
     </div>
   </div>
 
 </body>
 </html>
-
-
