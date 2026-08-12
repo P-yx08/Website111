@@ -577,21 +577,27 @@ body {
  justify-content: space-between;
  gap: 20px;
  width: 100%;
- box-sizing: border-box;
  margin-top: 40px;
 }
-
 
 .images1 {
  flex: 1;
  background-color: #ffffff;
  border-radius: 16px;
  padding: 15px;
- box-sizing: border-box;
  display: flex;
  flex-direction: column;
  align-items: center;
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.images1 img {
+ width: 100%;
+ max-width: 150px;
+ height: 150px;
+ object-fit: cover;
+ border-radius: 50%;
+ margin-bottom: 10px; 
 }
 
 
@@ -601,18 +607,6 @@ body {
  color: #333333;
  margin: 0 0 10px 0;
 }
-
-
-.images1 img {
- width: 100%;
- max-width: 150px;
- height: 150px;
- object-fit: cover;
- border-radius: 50%;
- display: block;
- margin: 0 auto 10px auto;
-}
-
 
 .credit {
  font-size: 11px;
