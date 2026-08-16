@@ -1,0 +1,37 @@
+<div class="photos">
+        <div class="images1">
+          <h3 class="habit-top-title">Hydrate</h3>
+          <img src="images/Hydration1.jpg" alt="Hydration">
+          <p class="credit">
+            <a href="https://stockcake.com" target="_blank">Image credit: StockCake</a>
+          </p>
+          <div class="pink-status-bar">Drink enough water</div>
+        </div>
+
+        <div class="images1">
+          <h3 class="habit-top-title">Sleep</h3>
+          <img src="images/Sleep.jpg" alt="Sleep">
+          <p class="credit">
+            <a href="https://pixabay.com" target="_blank">Image credit: Pixabay</a>
+          </p>
+          <div class="pink-status-bar">Sleep is essential</div>
+        </div>
+
+        <div class="images1">
+          <h3 class="habit-top-title">Exercise</h3>
+          <img src="images/Exercise.jpg" alt="Exercise">
+          <p class="credit">
+            <a href="https://pixabay.com" target="_blank">Image credit: Pixabay</a>
+          </p>
+          <div class="pink-status-bar">Let's do some exercise</div>
+        </div>
+
+        <div class="images1">
+          <h3 class="habit-top-title">Nutrition</h3>
+          <img src="images/Nutrition.jpg" alt="Nutrition">  
+          <p class="credit">
+            <a href="https://stockcake.com" target="_blank">Image credit: StockCake</a>
+          </p>
+          <div class="pink-status-bar">Eat well for mood</div>
+        </div>
+      </div> 
