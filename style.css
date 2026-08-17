@@ -639,6 +639,11 @@ body {
  width: fit-content;
 }
 
+.bottom-credit {
+  display: none !important;
+}
+
+
 .hero-credit-left {
   position: absolute;
   bottom: 12px;
@@ -649,6 +654,7 @@ body {
   z-index: 10;
 }
 
+
 .hero-credit-right {
   position: absolute;
   bottom: 12px;
@@ -658,3 +664,22 @@ body {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
   z-index: 10;
 }
+
+
+.hero-credit-left a,
+.hero-credit-left a:visited,
+.hero-credit-right a,
+.hero-credit-right a:visited {
+  color: #ffffff !important;
+  text-decoration: underline;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+
+.hero-credit-left a:hover,
+.hero-credit-right a:hover {
+  opacity: 0.9;
+  color: #E0EFE0 !important;
+}
+
+
