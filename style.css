@@ -638,3 +638,23 @@ body {
  font-weight: bold;
  width: fit-content;
 }
+
+.hero-credit-left {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  font-size: 11px;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.hero-credit-right {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  font-size: 11px;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
