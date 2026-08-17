@@ -91,3 +91,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+const habitTips = {
+  hydrate: {
+    icon: '💧',
+    title: 'Hydration Tips',
+    content: `
+      <p><strong>💡 Quick Knowledge:</strong> Drinking water boosts brain function, energy levels, and skin health!</p>
+      <p><strong>✨ How to stick with it:</strong> Keep a water bottle right next to your desk or bed so it's always in sight. Drink a glass right after waking up!</p>
+    `
+  },
+  sleep: {
+    icon: '🌙',
+    title: 'Better Sleep Habits',
+    content: `
+      <p><strong>💡 Quick Knowledge:</strong> Quality sleep improves focus, mood regulation, and immune strength.</p>
+      <p><strong>✨ How to stick with it:</strong> Set a regular bedtime alarm and put away all screens 30 minutes before sleep to let your brain wind down.</p>
+    `
+  },
+  exercise: {
+    icon: '🏃‍♂️',
+    title: 'Movement Motivation',
+    content: `
+      <p><strong>💡 Quick Knowledge:</strong> Just 15-20 minutes of daily movement releases endorphins to brighten your mood.</p>
+      <p><strong>✨ How to stick with it:</strong> Don't start too hard! A simple 10-minute walk or light stretch counts. Consistency beats intensity.</p>
+    `
+  },
+  nutrition: {
+    icon: '🥗',
+    title: 'Balanced Eating',
+    content: `
+      <p><strong>💡 Quick Knowledge:</strong> Rainbow-colored meals provide diverse vitamins that nourish your brain and gut.</p>
+      <p><strong>✨ How to stick with it:</strong> Add one portion of fresh fruit or veggies to your lunch today. Small healthy swaps make a big difference!</p>
+    `
+  }
+};
+
+function showTip(type) {
+  const tip = habitTips[type];
+  if (!tip) return;
+
+  document.getElementById('modal-icon').innerText = tip.icon;
+  document.getElementById('modal-title').innerText = tip.title;
+  document.getElementById('modal-body').innerHTML = tip.content;
+
+  document.getElementById('tip-modal').classList.add('active');
+}
+
+function closeTipModal(event, forceClose = false) {
+  if (forceClose || event.target.classList.contains('modal-overlay')) {
+    document.getElementById('tip-modal').classList.remove('active');
+  }
+}
