@@ -568,11 +568,23 @@ body {
   right: calc(50% - 84px);
   font-size: 9px;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 1px 5px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 6px;
   border-radius: 3px;
-  pointer-events: none;
+  pointer-events: auto;
   white-space: nowrap;
+  z-index: 5;
+}
+
+.contact-img-credit a,
+.contact-img-credit a:visited {
+  color: #ffffff !important;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.contact-img-credit a:hover {
+  opacity: 0.8;
 }
 
 .photos {
