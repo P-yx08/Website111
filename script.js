@@ -1,14 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
     const answers = document.querySelectorAll(".info-hero-card .card-answer");
-
     answers.forEach(answer => {
         answer.addEventListener("click", () => {
             answer.classList.add("show");
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.links a');
+    const sections = document.querySelectorAll('section[id]');
+    if (sections.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    const activeLink = document.querySelector(`.links a[href="#${id}"]`);
+                    if (activeLink) activeLink.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3 });
+        sections.forEach(section => observer.observe(section));
+    }
+
     const habitNames = ["Hydrate", "Sleep", "Exercise", "Nutrition"];
     const gridContainer = document.getElementById('daysGrid');
     const resetBtn = document.getElementById('manualResetBtn');
@@ -19,19 +32,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let habitStorage = savedHabits ? JSON.parse(savedHabits) : {};
 
     if (!savedHabits) {
+        initHabitStorage();
+    }
+
+    function initHabitStorage() {
         for (let i = 1; i <= 7; i++) {
             habitStorage[`day${i}`] = { Hydrate: false, Sleep: false, Exercise: false, Nutrition: false };
         }
         localStorage.setItem('my7DayHabits', JSON.stringify(habitStorage));
     }
 
-    function resetAllHabits() {
-        for (let i = 1; i <= 7; i++) {
-            habitStorage[`day${i}`] = { Hydrate: false, Sleep: false, Exercise: false, Nutrition: false };
-        }
-        localStorage.setItem('my7DayHabits', JSON.stringify(habitStorage));
+    window.resetAllHabits = function() {
+        initHabitStorage();
         renderGrid();
-    }
+    };
 
     function renderGrid() {
         gridContainer.innerHTML = '';
@@ -61,10 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (resetBtn) {
         resetBtn.addEventListener('click', () => {
-            const confirmReset = confirm("Are you sure you want to clear your current progress and restart a new week?");
-            if (confirmReset) {
-                resetAllHabits();
-            }
+            showResetModal(
+                "Reset Progress?",
+                "Are you sure you want to clear your current progress and restart a new week?"
+            );
         });
     }
 
@@ -82,15 +96,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (isDay7Complete) {
                 setTimeout(() => {
-                    const userConfirmed = confirm("Congratulations on completing your 7-day habit check-in! Do you want to reset immediately and start a new week?");
-                    if (userConfirmed) {
-                        resetAllHabits();
-                    }
+                    showResetModal(
+                        "🎉 Congratulations!",
+                        "You completed your 7-day habit check-in! Do you want to reset and start a new week?"
+                    );
                 }, 300);
             }
         }
     });
 });
+
+function showResetModal(title, message) {
+    const modal = document.getElementById('reset-modal');
+    if (!modal) return;
+    
+    document.querySelector('#reset-modal h3').innerText = title;
+    document.querySelector('#reset-modal p').innerText = message;
+    modal.classList.add('active');
+}
+
+function closeResetModal(event, forceClose = false) {
+    const modal = document.getElementById('reset-modal');
+    if (forceClose || (event && event.target.classList.contains('modal-overlay'))) {
+        modal.classList.remove('active');
+    }
+}
+
+function confirmResetWeek() {
+    if (typeof window.resetAllHabits === 'function') {
+        window.resetAllHabits();
+    }
+    closeResetModal(null, true);
+}
 
 const habitTips = {
   hydrate: {
@@ -139,7 +176,7 @@ function showTip(type) {
 }
 
 function closeTipModal(event, forceClose = false) {
-  if (forceClose || event.target.classList.contains('modal-overlay')) {
+  if (forceClose || (event && event.target.classList.contains('modal-overlay'))) {
     document.getElementById('tip-modal').classList.remove('active');
   }
 }
