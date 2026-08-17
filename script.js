@@ -115,9 +115,11 @@ function showResetModal(title, message) {
     modal.classList.add('active');
 }
 
-function closeResetModal(event, forceClose = false) {
+function closeResetModal(event) {
     const modal = document.getElementById('reset-modal');
-    if (forceClose || (event && event.target.classList.contains('modal-overlay'))) {
+    if (!modal) return;
+    
+    if (!event || event.target.classList.contains('modal-overlay')) {
         modal.classList.remove('active');
     }
 }
