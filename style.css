@@ -250,7 +250,7 @@ body {
 .info-nav-links {
  display: flex;
  gap: 20px;
- background-color: #a4b3f6;
+ background-color: #81C784;
  padding: 12px 32px;
  border-radius: 50px;
  box-shadow: 0 4px 15px rgba(129, 199, 132, 0.4);
@@ -369,7 +369,7 @@ body {
 
 
 .btn-reset-weekly {
- background-color: #d5efd5;
+ background-color: #81C784;
  color: #ffffff;
  border: none;
  padding: 10px 24px;
@@ -414,10 +414,10 @@ body {
 .day-title {
  font-size: 16px;
  font-weight: bold;
- color: #7B68EE;
+ color: #2E7D32;
  margin-bottom: 12px;
  text-align: center;
- border-bottom: 2px solid #F0E6FF;
+ border-bottom: 2px solid #C8E6C9;
  padding-bottom: 5px;
 }
 
@@ -449,7 +449,7 @@ body {
 
 
 .habit-item:hover {
- background-color: #F5F0FF;
+ background-color: #E8F5E9;
 }
 
 
@@ -458,7 +458,7 @@ body {
  -webkit-appearance: none;
  width: 18px;
  height: 18px;
- border: 2px solid #B0A4DE;
+ border: 2px solid #81C784;
  border-radius: 4px;
  outline: none;
  cursor: pointer;
@@ -469,8 +469,8 @@ body {
 
 
 .habit-item input[type="checkbox"]:checked {
- background-color: #7B68EE;
- border-color: #7B68EE;
+ background-color: #4CAF50;
+ border-color: #4CAF50;
 }
 
 
@@ -626,7 +626,7 @@ body {
 
 
 .pink-status-bar {
- background-color: #a4b3f6;
+ background-color: #81C784;
  color: #ffffff;
  padding: 8px 16px;
  border-radius: 20px;
