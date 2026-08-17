@@ -53,12 +53,12 @@ body {
  justify-content: flex-start;
  gap: 20px;
  align-items: center;
- background-color: #81C784;
+ background-color: #8ac096;
  padding: 12px 32px;
  border-radius: 50px;
  box-sizing: border-box;
  width: max-content;
- box-shadow: 0 4px 15px rgba(129, 199, 132, 0.3);
+ box-shadow: 0 4px 15px rgba(138, 192, 150, 0.4);
 }
 
 
@@ -125,8 +125,8 @@ body {
 
 
 .hero-card {
- background-color: rgba(255, 255, 255, 0.45);
- backdrop-filter: blur(12px);
+ background-color: rgba(255, 255, 255, 0.45); 
+ backdrop-filter: blur(12px);                
  -webkit-backdrop-filter: blur(12px);
  border-radius: 32px;
  padding: 50px 60px;
@@ -174,7 +174,7 @@ body {
  font-weight: bold;
  font-style: italic;
  color: #ffffff;
- background-color: #81C784;
+ background-color: #8ac096;
  padding: 14px 90px;
  border-radius: 45px;
  transition: background-color 0.2s ease;
@@ -182,7 +182,7 @@ body {
 
 
 .btn-start:hover {
- background-color:#66BB6A;
+ background-color:#8ac096;
  cursor: pointer;               
 }
 
@@ -230,7 +230,7 @@ body {
  justify-content: space-between;
  align-items: center;
  width: 100%;
- background-color: rgba(46, 125, 50, 0.12);
+ background-color: #8ac096;
  padding: 20px 50px;
  border-radius: 20px;
  box-sizing: border-box;
@@ -250,7 +250,7 @@ body {
 .info-nav-links {
  display: flex;
  gap: 20px;
- background-color: #81C784;
+ background-color: #8ac096;
  padding: 12px 32px;
  border-radius: 50px;
  box-shadow: 0 4px 15px rgba(129, 199, 132, 0.4);
