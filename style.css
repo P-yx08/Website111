@@ -997,3 +997,221 @@ body {
   background-color: #2E7D32;
   color: #ffffff;
 }
+
+.contact-section {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #a8d5ba;
+  box-sizing: border-box;
+}
+
+.footer-columns-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hh-footer-left {
+  text-align: center;
+}
+
+.hh-footer-right {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+
+.contact-image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image-box img {
+  max-width: 160px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  color: #2E7D32;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  background-color: #2E7D32;
+  color: #ffffff;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #a8d5ba;
+  box-sizing: border-box;
+}
+
+.footer-columns-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hh-footer-left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hh-footer-right {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+
+.contact-image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image-box img {
+  max-width: 160px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  margin-left: -40px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  color: #2E7D32;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  background-color: #2E7D32;
+  color: #ffffff;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #a8d5ba;
+  box-sizing: border-box;
+}
+
+.footer-columns-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hh-footer-left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hh-footer-right {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+
+.contact-image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image-box img {
+  max-width: 160px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  margin-left: -120px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  color: #2E7D32;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  background-color: #2E7D32;
+  color: #ffffff;
+}
