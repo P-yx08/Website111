@@ -206,7 +206,7 @@ body {
 
 
 .info-page-wrapper {
- background-color: #e5e0f3;
+ background-color: #E0EFE0;
  width: 100%;
  box-sizing: border-box;
  min-height: 100vh;
@@ -329,7 +329,7 @@ body {
 
 
 .habits-page-wrapper {
- background-color: #e5e0f3;
+ background-color: #E0EFE0;
  width: 100%;
  box-sizing: border-box;
  min-height: 100vh;
@@ -369,7 +369,7 @@ body {
 
 
 .btn-reset-weekly {
- background-color: #a4b3f6;
+ background-color: #d5efd5;
  color: #ffffff;
  border: none;
  padding: 10px 24px;
@@ -487,7 +487,7 @@ body {
 }
 
 .contact-section {
- background-color: #bfaee3;
+ background-color: #B2D8B2;
  padding: 50px 40px;
  box-sizing: border-box;
  width: 100%;

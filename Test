@@ -1,37 +1,47 @@
-<div class="photos">
-        <div class="images1">
-          <h3 class="habit-top-title">Hydrate</h3>
-          <img src="images/Hydration1.jpg" alt="Hydration">
-          <p class="credit">
-            <a href="https://stockcake.com" target="_blank">Image credit: StockCake</a>
-          </p>
-          <div class="pink-status-bar">Drink enough water</div>
-        </div>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+</head>
+<body>
 
-        <div class="images1">
-          <h3 class="habit-top-title">Sleep</h3>
-          <img src="images/Sleep.jpg" alt="Sleep">
-          <p class="credit">
-            <a href="https://pixabay.com" target="_blank">Image credit: Pixabay</a>
-          </p>
-          <div class="pink-status-bar">Sleep is essential</div>
-        </div>
+<main class="hero-container">
+    <div class="hero-bg-left"></div>
+    <div class="hero-bg-right"></div>
 
-        <div class="images1">
-          <h3 class="habit-top-title">Exercise</h3>
-          <img src="images/Exercise.jpg" alt="Exercise">
-          <p class="credit">
-            <a href="https://pixabay.com" target="_blank">Image credit: Pixabay</a>
-          </p>
-          <div class="pink-status-bar">Let's do some exercise</div>
-        </div>
+    <div class="hero-card">
+      <h1 class="hero-title">Changes happen here!</h1>
+      <p class="hero-subtitle">Small steps make big differences</p>
+      <div class="button-container">
+        <a href="#info-section" class="btn-start">Start</a>
+      </div>
+    </div>
 
-        <div class="images1">
-          <h3 class="habit-top-title">Nutrition</h3>
-          <img src="images/Nutrition.jpg" alt="Nutrition">  
-          <p class="credit">
-            <a href="https://stockcake.com" target="_blank">Image credit: StockCake</a>
-          </p>
-          <div class="pink-status-bar">Eat well for mood</div>
-        </div>
-      </div> 
+    <div class="bottom-credit">
+      <p>Image by <a href="https://pixabay.com" target="_blank">Couleur</a> from <a href="https://pixabay.com" target="_blank">Pixabay</a></p>
+    </div>
+  </main>
+
+</body>
+</html>
+
+
+
+
+body {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ min-height: 100vh;
+ background-image: url("images/Background.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ font-family: "Comic Sans MS", "Chalkboard SE", "STXihei", "华文细圆", "Microsoft YaHei", sans-serif;
+ box-sizing: border-box;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ overflow-x: hidden;
+}
