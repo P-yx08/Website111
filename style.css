@@ -213,9 +213,11 @@ body {
  min-height: 100vh;
  display: flex;
  justify-content: center;
- align-items: center;
- padding: 120px 40px 60px 40px;
- scroll-margin-top: 12vh;
+ align-items: flex-start;
+ padding-top: 100px;   
+ padding-bottom: 60px;
+ padding-left: 40px;
+ padding-right: 40px;
 }
 
 
@@ -338,8 +340,7 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
- padding: 120px 40px 60px 40px;
- scroll-margin-top: 12vh;
+ padding: 60px 40px;
 }
 
 
