@@ -214,7 +214,8 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
- padding: 60px 40px;
+ padding: 120px 40px 60px 40px;
+ scroll-margin-top: 12vh;
 }
 
 
@@ -337,7 +338,8 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
- padding: 60px 40px;
+ padding: 120px 40px 60px 40px;
+ scroll-margin-top: 12vh;
 }
 
 
