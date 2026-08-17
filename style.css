@@ -230,7 +230,7 @@ body {
  justify-content: space-between;
  align-items: center;
  width: 100%;
- background-color: rgba(130, 115, 160, 0.15);
+ background-color: rgba(46, 125, 50, 0.12);
  padding: 20px 50px;
  border-radius: 20px;
  box-sizing: border-box;
@@ -253,7 +253,7 @@ body {
  background-color: #a4b3f6;
  padding: 12px 32px;
  border-radius: 50px;
- box-shadow: 0 4px 15px rgba(164, 179, 246, 0.3);
+ box-shadow: 0 4px 15px rgba(129, 199, 132, 0.4);
 }
 
 
