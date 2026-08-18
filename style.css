@@ -1229,3 +1229,17 @@ body {
   color: #1b4332;
   font-weight: bold;
 }
+
+.links .nav-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.links .nav-btn.active {
+  background-color: #a8d5ba !important;
+  color: #1b4332 !important;
+  font-weight: bold;
+}

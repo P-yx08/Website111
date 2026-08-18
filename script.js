@@ -214,3 +214,32 @@ document.addEventListener("DOMContentLoaded", () => {
     if (section) observer.observe(section);
   });
 });
+
+window.addEventListener("scroll", () => {
+  const navLinks = document.querySelectorAll(".links .nav-btn");
+  const sections = [
+    document.querySelector(".hero-container"),
+    document.querySelector("#info-section"),
+    document.querySelector("#habits-section")
+  ];
+
+  let current = "";
+  const scrollPosition = window.scrollY + 200;
+
+  sections.forEach((section) => {
+    if (section && scrollPosition >= section.offsetTop) {
+      current = section.getAttribute("id") || "hero";
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    const href = link.getAttribute("href");
+    if (
+      (current === "hero" && (href === "#" || href === "")) ||
+      (current && href === `#${current}`)
+    ) {
+      link.classList.add("active");
+    }
+  });
+});
