@@ -1334,3 +1334,46 @@ body {
     width: 100% !important;
   }
 }
+
+.card-answer-box {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px 20px 32px 20px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.card-answer {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-source {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 11px;
+  color: #888888;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, color 0.2s ease;
+}
+
+.card-source:hover {
+  color: #1b4332;
+  text-decoration: underline;
+}
+
+.info-hero-card.active .card-answer,
+.info-hero-card.active .card-source {
+  opacity: 1;
+}
