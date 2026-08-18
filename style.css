@@ -1263,3 +1263,22 @@ body {
     font-size: 14px;
   }
  }
+
+ .card-answer {
+    font-size: 13px;
+  }
+
+  nav, .navbar, .info-top-nav-bar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-container, .info-page-wrapper, .habits-page-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px !important;
+    box-sizing: border-box;
+  }
