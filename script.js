@@ -182,3 +182,35 @@ function closeTipModal(event, forceClose = false) {
     document.getElementById('tip-modal').classList.remove('active');
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".links .nav-btn");
+  
+  const sections = [
+    document.querySelector(".hero-container"),
+    document.querySelector("#info-section"),
+    document.querySelector("#habits-section")
+  ];
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "-20% 0px -60% 0px",
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const index = sections.indexOf(entry.target);
+        if (index !== -1) {
+          navLinks.forEach((link) => link.classList.remove("active"));
+          navLinks[index].classList.add("active");
+        }
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach((section) => {
+    if (section) observer.observe(section);
+  });
+});
