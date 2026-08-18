@@ -1244,4 +1244,93 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
+  .info-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .info-hero-card {
+    padding: 16px;
+  }
+
+  .card-question-box h2 {
+    font-size: 14px;
+  }
+
+  .card-answer {
+    font-size: 13px;
+  }
+
+  nav, .navbar, .info-top-nav-bar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-container, .info-page-wrapper, .habits-page-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px !important;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box !important;
+  }
+
+  body, html {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .hero-container {
+    width: 100% !important;
+    padding: 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  header, nav, .navbar, .links {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
+    margin-top: 10px !important;
+  }
+
+  .links .nav-btn {
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+  }
+
+  h1, .logo, .hero-title {
+    font-size: 24px !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-card, .card, div[class*="card"] {
+    width: 90% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+    padding: 16px !important;
+  }
+
+  .info-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+}
