@@ -1282,3 +1282,29 @@ body {
     padding: 16px !important;
     box-sizing: border-box;
   }
+
+  #info-section {
+  padding-top: 100px !important;
+  scroll-margin-top: 80px !important;
+  box-sizing: border-box;
+}
+
+.info-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+#info-section {
+  padding-top: 20px !important;
+  scroll-margin-top: 0px !important;
+  box-sizing: border-box;
+}
+
+.info-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 16px;
+}
