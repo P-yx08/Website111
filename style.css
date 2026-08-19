@@ -1321,3 +1321,21 @@ body {
   margin: 0;
 }
 
+#info-section {
+  scroll-margin-top: 80px !important;
+  padding-top: 24px !important;
+  box-sizing: border-box;
+}
+
+.info-top-nav-bar {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding: 16px 24px !important;
+  margin-bottom: 20px !important;
+}
+
+.info-title {
+  text-align: left !important;
+  margin: 0 !important;
+}
