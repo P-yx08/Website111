@@ -1361,3 +1361,23 @@ body {
 .explore-card {
   padding: 12px !important;
 }
+
+#contact-section, .contact-section, footer, .footer {
+  margin-top: -60px !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+#explore-section, .explore-section {
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+}
+
+.habits-tracker-grid img, .explore-cards-grid img {
+  max-height: 90px !important;
+  width: auto !important;
+}
+
+.info-hero-grid, .habits-tracker-grid, .explore-cards-grid {
+  gap: 8px !important;
+}
