@@ -1308,3 +1308,16 @@ body {
   gap: 24px;
   margin-top: 16px;
 }
+
+.info-top-nav-bar {
+  text-align: left !important;
+  justify-content: flex-start !important;
+  display: flex;
+  padding-left: 8px;
+}
+
+.info-title {
+  text-align: left !important;
+  margin: 0;
+}
+
