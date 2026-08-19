@@ -1339,3 +1339,25 @@ body {
   text-align: left !important;
   margin: 0 !important;
 }
+
+#explore-section {
+  padding-bottom: 20px !important;
+}
+
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px !important;
+}
+
+.habits-tracker-grid {
+  margin-bottom: 8px !important;
+}
+
+.explore-cards-grid {
+  gap: 16px !important;
+}
+
+.explore-card {
+  padding: 12px !important;
+}
