@@ -1396,3 +1396,13 @@ body {
 .info-hero-grid {
   margin-top: 0 !important;
 }
+
+#info-section {
+  scroll-margin-top: 100px !important;
+  transform: translateY(18px) !important;
+}
+
+.info-top-nav-bar {
+  margin-top: 10px !important;
+  margin-bottom: 16px !important;
+}
