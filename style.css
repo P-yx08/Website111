@@ -1381,3 +1381,18 @@ body {
 .info-hero-grid, .habits-tracker-grid, .explore-cards-grid {
   gap: 8px !important;
 }
+
+#info-section {
+  scroll-margin-top: 75px !important;
+  padding-top: 18px !important;
+  box-sizing: border-box;
+}
+
+.info-top-nav-bar {
+  margin-top: 0 !important;
+  margin-bottom: 16px !important;
+}
+
+.info-hero-grid {
+  margin-top: 0 !important;
+}
