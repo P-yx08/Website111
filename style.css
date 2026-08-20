@@ -39,14 +39,12 @@ body {
  backdrop-filter: blur(8px);     
 }
 
-
 .header-title h1 {
  margin: 0;
  color: rgba(255, 255, 255, 0.95);
  font-size: 56px;     
  font-weight: bold;
 }
-
 
 .links {
  display: inline-flex;
@@ -60,7 +58,6 @@ body {
  width: max-content;
  box-shadow: 0 4px 15px rgba(138, 192, 150, 0.4);
 }
-
 
 .links a.nav-btn {
  text-decoration: none;
@@ -1404,4 +1401,15 @@ body {
 .info-top-nav-bar {
   margin-top: 10px !important;
   margin-bottom: 16px !important;
+}
+
+.hh-footer-right {
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.hh-footer-right .footer-text {
+  text-align: center !important;
 }
