@@ -1,7 +1,7 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: #F1EFDD;
+  background-color: #E0EFE0;
   scroll-behavior: smooth;
 }
 
@@ -10,7 +10,6 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  background-image: url("images/Background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
