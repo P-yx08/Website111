@@ -134,13 +134,13 @@ body {
 
 .hero-bg-left {
   left: 0;
-  background-image: url("images/Background1.jpg");
+  background-image: url("Images/Background1.jpg");
   background-position: center center;
 }
 
 .hero-bg-right {
   right: 0;
-  background-image: url("images/Background2.jpg");
+  background-image: url("Images/Background2.jpg");
   background-position: center center;
 }
 
